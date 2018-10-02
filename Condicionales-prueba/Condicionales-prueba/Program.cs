@@ -50,7 +50,7 @@ namespace Condicionales_prueba
             //Pedimos un número del 1 al 7 y lo traducimos al día de la semana correspondiente
 
             int numSem; //establecemos variable
-            Console.WriteLine("Dime un número del 1 al 7."); //Mensaje en pantalla
+            Console.WriteLine("Dime un número del 1 al 7. Lo traduciremos al día de la semana correspondiente."); //Mensaje en pantalla
             numSem = Int32.Parse(Console.ReadLine()); //Guardamos el valor dado por el usuario en la variable
 
             if (numSem == 1) //Si el número es un uno
