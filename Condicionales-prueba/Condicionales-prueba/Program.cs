@@ -95,6 +95,9 @@ namespace Condicionales_prueba
 
             switch (mes)
             {
+                case 0:
+                    Console.WriteLine("Definitivamente ESE NÚMERO NO CORRESPONDE A UN MES.");
+                    break;
                 case 1:
                     Console.WriteLine("Ese mes es enero.");
                     break;
