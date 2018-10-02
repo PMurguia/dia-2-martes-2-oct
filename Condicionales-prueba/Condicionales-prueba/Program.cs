@@ -86,6 +86,66 @@ namespace Condicionales_prueba
                 Console.WriteLine("No es un número del 1 al 7."); //Salta este mensaje
             }
             Console.ReadLine();
+
+            //Pedir por teclado un numero de mes y traducirlo.
+
+            int mes; //Generamos variable para guardar el valor
+            Console.WriteLine("Introduce un número de mes. "); //Pedimos un número
+            mes = Int32.Parse(Console.ReadLine()); //Lo guardamos en la variable generada
+
+            switch (mes)
+            {
+                case 1:
+                    Console.WriteLine("Ese mes es enero.");
+                    break;
+                case 2:
+                    Console.WriteLine("Ese mes e febrero.");
+                    break;
+                case 3:
+                    Console.WriteLine("Ese mes es marzo.");
+                    break;
+                case 4:
+                    Console.WriteLine("Ese mes es abril.");
+                    break;
+                case 5:
+                    Console.WriteLine("Ese mes es mayo.");
+                    break;
+                case 6:
+                    Console.WriteLine("Ese mes es junio.");
+                    break;
+                case 7:
+                    Console.WriteLine("Ese mes es julio.");
+                    break;
+                case 8:
+                    Console.WriteLine("Ese mes es agosto.");
+                    break;
+                case 9:
+                    Console.WriteLine("Ese mes es septiembre.");
+                    break;
+                case 10:
+                    Console.WriteLine("Ese mes es octubre.");
+                    break;
+                case 11:
+                    Console.WriteLine("Ese mes es noviembre.");
+                    break;
+                case 12:
+                    Console.WriteLine("Ese mes es diciembre.");
+                    break;
+                default:
+                    Console.WriteLine("No hay ningún mes después del 12, alicate. ");
+                    break;
+            }
+            Console.ReadLine();
+
+
+
+
+            //Pedir por teclado peso y alura e indicar por IMC cual es su clasificación
+
+            int altura; //Creamos variable para valor altura
+            int peso; //Creamos variable para valor peso
+            Console.WriteLine("Introduce tu altura en ");
+
         }
     }
 }
