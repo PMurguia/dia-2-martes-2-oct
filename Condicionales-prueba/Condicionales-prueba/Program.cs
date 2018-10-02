@@ -36,7 +36,7 @@ namespace Condicionales_prueba
             parImpar1 = Int32.Parse(Console.ReadLine()); //Guardamos valor en variable
             if (parImpar1 % 2 == 0) // Comparamos si el resto de dividir el número introducido entre 2 es 0
             {
-                Console.WriteLine("El número seleccionado es par. "); //Si es 0, el número es par, por lo que salta este mensaje
+                Console.WriteLine("El número seleccionado es par. "); //Si el resultado es 0, el número es par, por lo que salta este mensaje
             }
             else //En caso de que el resto de 1
             {
