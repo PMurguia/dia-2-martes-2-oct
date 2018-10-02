@@ -10,7 +10,7 @@ namespace Condicionales_prueba
     {
         static void Main(string[] args)
         {
-            //Pedir dos números y decir si son iguales o no.
+            //Pedir dos números y decir si son iguales o no. 
 
             int num1; //Primer número
             int num2; //Segundo número
@@ -141,13 +141,85 @@ namespace Condicionales_prueba
             Console.ReadLine();
 
 
+            //establecer clasificación en función de la nota
 
+            double nota;
+            Console.WriteLine("¿Qué nota has sacado?. ");
+            nota = Double.Parse(Console.ReadLine());
+
+            if (nota < 5)
+            {
+                Console.WriteLine("Suspenso. ");
+            }
+            else if (nota >= 5 && nota < 6)
+            {
+                Console.WriteLine("Aprobado. ");
+            }
+            else if (nota >= 6 && nota < 7)
+            {
+                Console.WriteLine("Bien. ");
+            }
+            else if (nota >= 7 && nota < 8)
+            {
+                Console.WriteLine("Muy Bien. ");
+            }
+            else if (nota >= 8 && nota < 9)
+            {
+                Console.WriteLine("Notable");
+            }
+            else if (nota >= 9 && nota <= 10)
+            {
+                Console.WriteLine("Sobresaliente. ");
+            }
+            Console.ReadLine();
+        
 
             //Pedir por teclado peso y alura e indicar por IMC cual es su clasificación
 
-            int altura; //Creamos variable para valor altura
-            int peso; //Creamos variable para valor peso
-            Console.WriteLine("Introduce tu altura en ");
+            double altura; //Creamos variable para valor altura
+            double peso; //Creamos variable para valor peso
+            Console.WriteLine("Introduce tu altura en metros. "); //Pedimos altura
+            altura = Double.Parse(Console.ReadLine()); //Guardamos valor en variable
+            Console.WriteLine("Introduce tu peso en kilos. "); //Pedimos peso
+            peso = Double.Parse(Console.ReadLine()); //Guardamos valor en variable
+            double imc = peso / Math.Pow(altura, 2); // Establecemos variable imc Y le damos un valor en forma de fórmula
+            Console.WriteLine("Tu IMC es " + imc); //Muestra en pantalla el imc calculado
+            if (imc < 16.00) // Empezamos a comparar en qué clasificación de la tabla de la OMS está ese imc (igual que ejer. anterior)
+            {
+                Console.WriteLine("Delgadez severa. ");
+            }
+            else if (imc >= 16.00 && imc <= 16.99)
+            {
+                Console.WriteLine("Infrapeso: Delgadez moderada. ");
+            }
+            else if (imc >= 17.00 && imc <= 18.49)
+            {
+                Console.WriteLine("Infrapeso: Delgadez acepable. ");
+            }
+            else if (imc >= 18.50 && imc <= 24.99)
+            {
+                Console.WriteLine("Peso normal. ");
+            }
+            else if (imc >= 25.00 && imc <= 29.99)
+            {
+                Console.WriteLine("Sobrepeso. ");
+            }
+            else if (imc >= 30.00 && imc <= 34.99)
+            {
+                Console.WriteLine("Obeso: Tipo I. ");
+            }
+            else if (imc >= 35.00 && imc <= 40.00)
+            {
+                Console.WriteLine("Obeso: Tipo II. ");
+            }
+            else if (imc > 40.00)
+            {
+                Console.WriteLine("Obeso: Tipo III. ");
+            }
+            Console.ReadLine();
+
+
+
 
         }
     }
