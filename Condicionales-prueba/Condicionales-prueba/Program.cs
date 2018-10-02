@@ -93,11 +93,11 @@ namespace Condicionales_prueba
             Console.WriteLine("Introduce un número de mes. "); //Pedimos un número
             mes = Int32.Parse(Console.ReadLine()); //Lo guardamos en la variable generada
 
-            switch (mes)
+            switch (mes) // Tomando el valor que introduce el usuario,
             {
-                case 0:
-                    Console.WriteLine("Definitivamente ESE NÚMERO NO CORRESPONDE A UN MES.");
-                    break;
+                case 0: // Si introduce este valor (repetir para cada "case")
+                    Console.WriteLine("Definitivamente ESE NÚMERO NO CORRESPONDE A UN MES."); //saldrá este mensaje (repeat for every sentence)
+                    break; //Se ejecutará si el valor introducido por el usuario corresponde a este caso (repetir para cada "break")
                 case 1:
                     Console.WriteLine("Ese mes es enero.");
                     break;
@@ -134,9 +134,9 @@ namespace Condicionales_prueba
                 case 12:
                     Console.WriteLine("Ese mes es diciembre.");
                     break;
-                default:
-                    Console.WriteLine("No hay ningún mes después del 12, alicate. ");
-                    break;
+                default: //Si introduce un valor que no está determinado en los "case", salta "default"
+                    Console.WriteLine("No hay ningún mes después del 12, alicate. "); //Y salta este mensaje
+                    break; //Y termina la ejecución
             }
             Console.ReadLine();
 
